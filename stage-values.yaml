@@ -1,0 +1,7 @@
+opensearch: &opensearch-cluster
+  ip2geo:
+    enabled: true
+
+opensearch-client:
+  <<: *opensearch-cluster
+  opensearchJavaOpts: "-Xmx1536m -Xms1536m"
