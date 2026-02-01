@@ -1,0 +1,13 @@
+opensearch:
+  ip2geo:
+    enabled: true
+opensearch-client:
+  ip2geo:
+    enabled: false
+  nodeGroup: client
+  opensearchJavaOpts: "-Xmx1024m -Xms1024m"
+  "0": ip2geo
+  "1":
+    enabled: true
+  "2": opensearchJavaOpts
+  "3": "-Xmx1536m -Xms1536m"
